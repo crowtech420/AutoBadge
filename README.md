@@ -2,7 +2,7 @@
 Beat formalism and bureaucracy by automatically completes UCSB's pointless screening survey.
 
 ## Disclaimer
-I, the author of this code, assumes no responsibility for any and all potential consequence for any user. This is a fun side project that I coded in less than an hour to experiment with Selenium. This applet stores your ID and password in PLAIN TEXT, so this will compromise your information security if the computer you're running it on is not safe. 
+I, the author of this code, assumes no responsibility for any and all potential consequence for any user. This is a fun side project that I coded in less than an hour to experiment with Selenium. This applet stores your ID and password in PLAIN TEXT, so this will compromise your information security if the computer you're running it on is not safe. You should not use this tool if you're experiencing any COVID-19 symptoms, by using this tool, you are attesting that you do not have any symptoms or experiences that are listed on the UCSB COVID Daily Screening Survey.
 
 ## Prerequisite
 Python 3+\
