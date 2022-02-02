@@ -1,5 +1,4 @@
 from selenium import webdriver
-from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -25,10 +24,8 @@ Q5 = """/html/body/div[2]/div/div[2]/main/form/div[6]/fieldset/div/div[2]/div"""
 SUBMIT_SURVEY = """/html/body/div[2]/div/div[2]/footer/div/div[2]/input"""
 SHOW_BADGE = """/html/body/div[4]/div/div[2]/form/div[2]/div/div/button"""
 
-
 driver = webdriver.Chrome()
 driver.get('https://studenthealthoc.sa.ucsb.edu/login_dualauthentication.aspx')
-
 
 driver.find_element_by_xpath(LOGIN_BUTTON).click()
 
@@ -39,8 +36,6 @@ emailField.send_keys(username)
 passwordField = driver.find_element_by_xpath(PASSWORD)
 passwordField.send_keys(pw)
 driver.find_element_by_xpath(SUBMIT_BUTTON).click()
-
-
 
 #jump to survey page while waiting for 2FA
 WebDriverWait(driver, duo_wait).until(EC.presence_of_element_located((By.XPATH, COMPLETE_SURVEY))).click()
@@ -57,6 +52,5 @@ driver.find_element_by_xpath(SUBMIT_SURVEY).click()
 
 #Verify Success and show badge
 WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, SHOW_BADGE))).click()
-sleep(5)
 
 #check your email for the badge
