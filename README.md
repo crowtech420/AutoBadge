@@ -7,7 +7,8 @@ I, the author of this code, assumes no responsibility for any and all potential 
 ## Prerequisite
 Python 3+\
 Selenium\
-Selenium chrome driver
+Selenium chrome driver\
+pyvirtualdisplay for headless usage
 
 ```bash
 pip3 install selenium
@@ -20,6 +21,7 @@ Have your phone ready for two-factor authentication (by default, it will wait fo
 ```python
 python3 AutoBadge.py
 ```
+You could also do this headlessly (say, on a EC2 Instance) by using pyvirtualdisplay. Uncomment a few lines and you're rocking (after you installed the prerequisites, and Chrome/Chrome Driver).
 
 ## To-do
 - Automate 2FA
